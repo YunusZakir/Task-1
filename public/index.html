@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Dynamic Table</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.4.4/math.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Dynamic Table</h1>
+      <div id="authArea"></div>
+    </header>
+    <main>
+      <section id="authSection" class="card">
+        <h2>Welcome — Sign Up / Log In</h2>
+        <div class="auth-forms">
+          <div>
+            <h3>Sign Up</h3>
+            <input id="signupUser" placeholder="username" />
+            <input id="signupPass" type="password" placeholder="password" />
+            <button id="signupBtn">Sign Up</button>
+          </div>
+          <div>
+            <h3>Log In</h3>
+            <input id="loginUser" placeholder="username" />
+            <input id="loginPass" type="password" placeholder="password" />
+            <button id="loginBtn">Log In</button>
+          </div>
+        </div>
+      </section>
+      <section id="editorSection" class="card hidden">
+        <div class="top-row">
+          <input id="tableName" placeholder="Table name" />
+          <button id="addRow">Add Row</button>
+          <button id="addCol">Add Column</button>
+          <button id="delRow">Delete Last Row</button>
+          <button id="delCol">Delete Last Col</button>
+          <button id="saveTable">Save Table</button>
+          <button id="exportCSV">Export CSV</button>
+          <button id="exportJSON">Export JSON</button>
+        </div>
+        <div id="tableWrapper"></div>
+      </section>
+      <section id="myTablesSection" class="card hidden">
+        <h3>Saved Tables</h3>
+        <ul id="tablesList"></ul>
+      </section>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

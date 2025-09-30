@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  padding: 20px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card {
+  background: #fff;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+  margin-top: 16px;
+}
+.auth-forms {
+  display: flex;
+  gap: 20px;
+}
+.auth-forms input {
+  display: block;
+  margin: 8px 0;
+  padding: 8px;
+  width: 200px;
+}
+.top-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.top-row input {
+  padding: 8px;
+  width: 220px;
+}
+#tableWrapper {
+  margin-top: 12px;
+  overflow: auto;
+}
+table {
+  border-collapse: collapse;
+  border: 2px solid #000;
+}
+td, th {
+  border: 2px solid #000000;
+  padding: 8px;
+  min-width: 90px;
+  text-align: left;
+}
+td[contenteditable="true"] {
+  background: #fff;
+}
+.hidden { 
+  display: none; 
+}
+#authArea { 
+  font-size: 14px; 
+}
+#tablesList { 
+  list-style: none; padding: 0; 
+}
+#tablesList li { 
+  padding: 6px 0; 
+  display:flex; 
+  gap:8px; 
+  align-items:center; 
+}
+button { 
+  padding: 8px 10px; 
+  cursor: pointer; 
+  border-radius:6px; 
+  border:1px solid #ccc; 
+  background: #fff; 
+}
